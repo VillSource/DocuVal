@@ -1,0 +1,3 @@
+[submodule "modules/identity"]
+	path = modules/identity
+	url = git@github.com:VillSource/Docuval-Identity.git
