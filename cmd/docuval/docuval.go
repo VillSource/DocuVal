@@ -1,13 +1,8 @@
 package main
 
-import (
-	"fmt"
-
-	"github.com/villsource/docuval/internal/server"
-)
+import "github.com/villsource/docuval/internal/docuval"
 
 func main() {
-	fmt.Println("Hello")
-	docuvalServer := server.New()
+	docuvalServer := docuval.New()
 	docuvalServer.Start()
 }
