@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	"github.com/gofiber/fiber/v2"
-	"github.com/villsource/docuval-identity/pkg/identity"
+	"github.com/villsource/docuval-identity/pkg/adapters/fiber"
 )
 
 type DocuvalServer struct {
@@ -28,5 +28,5 @@ func (s *DocuvalServer) Start() {
 
 
 func (s *DocuvalServer) configIdentity() {
-    s.fiberApp.Use(identity.NewFiberMiddleware())
+    s.fiberApp.Use(docuvalIdentityFiberAdapter.NewFiberMiddleware())
 }
